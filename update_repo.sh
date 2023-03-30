@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /tmp/centos_repo/
 unzip yum.zip
 rsync -vaP /tmp/centos_repo/yum.repos.d/* /etc/yum.repos.d/
 sed -i 's/^\([^#]\)/#\1/g' /etc/yum.repos.d/bintray-sbt-rpm.repo
